@@ -21,12 +21,12 @@
 
 模型下载 
 ---------------------------------------------
-| 模型简称 | 语料 | 词汇表|直接下载 | 
-| :------- | :--------- | :---------: |  :---------: | 
-| **`RoBERTa-large-clue`** | **CLUECorpus2020** | **CLUEVocabulary** | **[TensorFlow](https://storage.googleapis.com/cluebenchmark/pretrained_models/RoBERTa-large-clue.zip)** |  
-| **`RoBERTa-tiny-clue`** | **CLUECorpus2020** | **CLUEVocabulary** | **[TensorFlow](https://storage.googleapis.com/cluebenchmark/pretrained_models/RoBERTa-tiny-clue.zip)**  | 
-| **`RoBERTa-tiny-pair`** <br/>句子对任务专门模型| **CLUECorpus2020** | **CLUEVocabulary** | **[TensorFlow](https://storage.googleapis.com/cluebenchmark/pretrained_models/RoBERTa-tiny-pair.zip)** | 
-| **`RoBERTa-large-pair`** | **CLUECorpus2020** | **CLUEVocabulary** | **[TensorFlow](https://storage.googleapis.com/cluebenchmark/pretrained_models/RoBERTa-large-pair.zip)**  | 
+| 模型简称 | 参数量|存储大小|语料 | 词汇表|直接下载 | 
+| :------- | :--------- | :--------- | :--------- | :---------: |  :---------: | 
+| **`RoBERTa-large-clue`** <br/> 大模型 | 290M |1.20G| **CLUECorpus2020** | **CLUEVocabulary** | **[TensorFlow](https://storage.googleapis.com/cluebenchmark/pretrained_models/RoBERTa-large-clue.zip)** |  
+| **`RoBERTa-tiny-clue`** <br/>超小模型 | 7.5M| 28.3M|**CLUECorpus2020** | **CLUEVocabulary** | **[TensorFlow](https://storage.googleapis.com/cluebenchmark/pretrained_models/RoBERTa-tiny-clue.zip)**  | 
+| **`RoBERTa-tiny-pair`** <br/>超小句子对模型|7.5M|28.3M| **CLUECorpus2020** | **CLUEVocabulary** | **[TensorFlow](https://storage.googleapis.com/cluebenchmark/pretrained_models/RoBERTa-tiny-pair.zip)** | 
+| **`RoBERTa-large-pair`** <br/>大句子对模型|290M| 1.20G|**CLUECorpus2020** | **CLUEVocabulary** | **[TensorFlow](https://storage.googleapis.com/cluebenchmark/pretrained_models/RoBERTa-large-pair.zip)**  | 
 
 （地址稍后更新）
 
