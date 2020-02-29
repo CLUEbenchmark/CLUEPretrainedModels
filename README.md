@@ -23,7 +23,7 @@ Pretrain Chinese model from CLUE 高质量中文预训练模型集合
 | :------- | :--------- | :---------: |  :---------: | 
 | **`RoBERTa-large-clue`** | **CLUECorpus2020** | **CLUEVocabulary** |  |  
 | **`RoBERTa-tiny-clue`** | **CLUECorpus2020** | **CLUEVocabulary** | **[TensorFlow](https://storage.googleapis.com/cluebenchmark/pretrained_models/RoBERTa-tiny-clue.zip)**  | 
-| **`RoBERTa-tiny-pair`** | **CLUECorpus2020** | **CLUEVocabulary** | ** ** | 
+| **`RoBERTa-tiny-pair`** <br/>相似度或句子对任务| **CLUECorpus2020** | **CLUEVocabulary** | **[TensorFlow](https://storage.googleapis.com/cluebenchmark/pretrained_models/RoBERTa-tiny-pair.zip)** | 
 | **`RoBERTa-large-pair`** | **CLUECorpus2020** | **CLUEVocabulary** | ** ** | 
 
 （地址稍后更新）
