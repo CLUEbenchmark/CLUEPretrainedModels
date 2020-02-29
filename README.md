@@ -34,24 +34,24 @@
 ---------------------------------------------
 | 模型   | Score  | 参数    | AFQMC  | TNEWS'  | IFLYTEK'   | CMNLI   |  
 | :----:| :----: | :----: | :----: |:----: |:----: |:----: | 
-| <a href="#">BERT-base (baseline)</a>      | 67.57% | 108M |  73.70% | 56.58%  | 60.29% | 79.69% | 
-| <a href="#">ALBERT-tiny</a>      | 60.65% | 4M  | 69.92% | 53.35%  | 48.71% | 70.61% |  
-| <a href="#">RoBERTa-tiny-clue</a>      | 63.60% | 7.5M  | 69.52% | 54.57%  | 57.31% | 73.10% |  
+| <a href="https://github.com/google-research/bert">BERT-base (baseline)</a>      | 67.57% | 108M |  73.70% | 56.58%  | 60.29% | 79.69% | 
+| <a href="https://github.com/brightmart/albert_zh">ALBERT-tiny</a>      | 60.65% | 4M  | 69.92% | 53.35%  | 48.71% | 70.61% |  
+| <a href="https://storage.googleapis.com/cluebenchmark/pretrained_models/RoBERTa-tiny-clue.zip">RoBERTa-tiny-clue</a>      | 63.60% | 7.5M  | 69.52% | 54.57%  | 57.31% | 73.10% |  
 
 <a href='https://www.cluebenchmarks.com/classification.html'>效果对比-大模型</a>
 ---------------------------------------------
 | 模型   | Score  | 参数    | AFQMC  | TNEWS'  | IFLYTEK'   | CMNLI   |  
 | :----:| :----: | :----: | :----: |:----: |:----: |:----: | 
-| <a href="#">BERT-base  (baseline)</a>      | 67.57% | 108M |  73.70% | 56.58%  | 60.29% | 79.69% | 
-| <a href="#">RoBERTa-wwm-large</a>      | 69.46% | 325M | **74.44%** | **58.41%**  | 62.77% | 82.20% | 
+| <a href="https://github.com/google-research/bert">BERT-base  (baseline)</a>      | 67.57% | 108M |  73.70% | 56.58%  | 60.29% | 79.69% | 
+| <a href="https://github.com/ymcui/Chinese-BERT-wwm">RoBERTa-wwm-large</a>      | 69.46% | 325M | **74.44%** | **58.41%**  | 62.77% | 82.20% | 
 | <a href="#">RoBERTa-large-clue</a>      | **69.68%** | **290M**  | 74.41% | 58.38%  | **63.58%** | **82.36%** |  
 
 <a href='https://www.cluebenchmarks.com/small_model_classification.html'>效果对比-句子对模型</a>
 ---------------------------------------------
 | 模型   | Score  | 参数    | AFQMC  | 
 | :----:| :----: | :----: | :----:  |
-| <a href="#">RoBERTa-tiny-clue</a>      | 69.52% | 7.5M| 69.52%|
-| <a href="#">RoBERTa-tiny-pair</a>      | 69.93%(&#8593;0.41) |7.5M | 69.93 % |
+| <a href="https://storage.googleapis.com/cluebenchmark/pretrained_models/RoBERTa-tiny-clue.zip">RoBERTa-tiny-clue</a>      | 69.52% | 7.5M| 69.52%|
+| <a href="https://storage.googleapis.com/cluebenchmark/pretrained_models/RoBERTa-tiny-pair.zip">RoBERTa-tiny-pair</a>      | 69.93%(&#8593;0.41) |7.5M | 69.93 % |
 | <a href="#">RoBERTa-large-clue</a>      | 74.00% | 92M| 74.00%|
 | <a href="#">RoBERTa-large-pair</a>      | 74.41%(&#8593;0.41) |92M | 74.41% |
  
@@ -61,7 +61,7 @@
 | :----:| :----: | :----: | :----: |:----: |:----: | 
 | <a href="#">BERT-base</a>      | google_vocab  | 21128 | 102M  | TPU V3-8  | 1k steps/404s | 
 | <a href="#">BERT-base</a>      | clue_vocab  | 8021(&#8595;62.04%) | 92M(&#8595;9.80%)  | TPU V3-8  | 1k steps/350s(&#8593;15.43%) | 
-| <a href="#">RoBERTa-tiny-clue</a>      | clue_vocab  | 8021(&#8595;62.05%) | 7.5M(&#8595;92.6%)  | TPU V3-8  |1k steps/50s(&#8593;708.0%)  | 
+| <a href="https://storage.googleapis.com/cluebenchmark/pretrained_models/RoBERTa-tiny-pair.zip">RoBERTa-tiny-clue</a>      | clue_vocab  | 8021(&#8595;62.05%) | 7.5M(&#8595;92.6%)  | TPU V3-8  |1k steps/50s(&#8593;708.0%)  | 
 
 
 小模型使用建议
@@ -109,17 +109,21 @@ add something here...
 
 问题反馈和支持
 ---------------------------------------------
- 可以提交issue，加入讨论群(QQ:836811304)
+ 如有问题请提交issue，加入讨论群(QQ:836811304)
  
  或发送邮件CLUEbenchmark@163.com
 
-##### Research supported with Cloud TPUs from Google's TensorFlow Research Cloud (TFRC)
+Computation Power
+---------------------------------------------
+Research supported with Cloud TPUs from Google's TensorFlow Research Cloud (TFRC)
 
 
 TODO LIST:
 ---------------------------------------------
 1. PyTorch版本
 2. 在线预测代码
+3. 一键运行6大分类任务
+4. 大模型去掉无效参数
 
 
 Reference:
