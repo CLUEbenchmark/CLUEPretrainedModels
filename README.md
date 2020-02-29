@@ -1,7 +1,9 @@
-# ModelZoo
-Pretrain Chinese model from CLUE 高质量中文预训练模型集合
+# CLUE Pretrained Models
 
-模型和效果对比，将会在 2020-02-29 晚上 更新到项目中
+高质量中文预训练模型集合：
+
+最先进的大模型、速度最快和效果好的小模型、面向相似性或句子对任务优化的专门模型
+
 
 介绍
 ---------------------------------------------
@@ -21,10 +23,10 @@ Pretrain Chinese model from CLUE 高质量中文预训练模型集合
 ---------------------------------------------
 | 模型简称 | 语料 | 词汇表|直接下载 | 
 | :------- | :--------- | :---------: |  :---------: | 
-| **`RoBERTa-large-clue`** | **CLUECorpus2020** | **CLUEVocabulary** |  |  
+| **`RoBERTa-large-clue`** | **CLUECorpus2020** | **CLUEVocabulary** | **[TensorFlow](https://storage.googleapis.com/cluebenchmark/pretrained_models/RoBERTa-large-clue.zip)** |  
 | **`RoBERTa-tiny-clue`** | **CLUECorpus2020** | **CLUEVocabulary** | **[TensorFlow](https://storage.googleapis.com/cluebenchmark/pretrained_models/RoBERTa-tiny-clue.zip)**  | 
 | **`RoBERTa-tiny-pair`** <br/>句子对任务专门模型| **CLUECorpus2020** | **CLUEVocabulary** | **[TensorFlow](https://storage.googleapis.com/cluebenchmark/pretrained_models/RoBERTa-tiny-pair.zip)** | 
-| **`RoBERTa-large-pair`** | **CLUECorpus2020** | **CLUEVocabulary** | ** ** | 
+| **`RoBERTa-large-pair`** | **CLUECorpus2020** | **CLUEVocabulary** | **[TensorFlow](https://storage.googleapis.com/cluebenchmark/pretrained_models/RoBERTa-large-pair.zip)**  | 
 
 （地址稍后更新）
 
@@ -44,7 +46,7 @@ Pretrain Chinese model from CLUE 高质量中文预训练模型集合
 | <a href="#">RoBERTa-wwm-large</a>      | 69.46% | 325M | **74.44%** | **58.41%**  | 62.77% | 82.20% | 
 | <a href="#">RoBERTa-large-clue</a>      | **69.68%** | **290M**  | 74.41% | 58.38%  | **63.58%** | **82.36%** |  
 
-<a href='https://www.cluebenchmarks.com/small_model_classification.html'>效果对比-句子对pair模型</a>
+<a href='https://www.cluebenchmarks.com/small_model_classification.html'>效果对比-句子对模型</a>
 ---------------------------------------------
 | 模型   | Score  | 参数    | AFQMC  | 
 | :----:| :----: | :----: | :----:  |
@@ -60,6 +62,15 @@ Pretrain Chinese model from CLUE 高质量中文预训练模型集合
 | <a href="#">BERT-base</a>      | google_vocab  | 21128 | 102M  | TPU V3-8  | 1k steps/404s | 
 | <a href="#">BERT-base</a>      | clue_vocab  | 8021(&#8595;62.04%) | 92M(&#8595;9.80%)  | TPU V3-8  | 1k steps/350s(&#8593;15.43%) | 
 | <a href="#">RoBERTa-tiny-clue</a>      | clue_vocab  | 8021(&#8595;62.05%) | 7.5M(&#8595;92.6%)  | TPU V3-8  |1k steps/50s(&#8593;708.0%)  | 
+
+
+小模型使用建议
+---------------------------------------------
+1.学习率：稍微大一点的学习率，如{1e4, 4e-4 1e-5} 默认:1e-4
+
+2.训练轮次：5-8。 使用验证集上效果最好的模型，用于测试集上测试或在线预测
+
+3.相似性或句子对任务，优先使用专门的RoBERTa-xxx-pair模型，如RoBERTa-tiny-pair(小号)或 RoBERTa-large-pair(大号)
 
 模型结构
 ---------------------------------------------
@@ -111,3 +122,6 @@ TODO LIST:
 2. 在线预测代码
 
 
+Reference:
+---------------------------------------------
+1. <a href='https://github.com/CLUEbenchmark/CLUE'>关于使用的任务的介绍</a> ：AFQMC(句子对), TNEWS'(情感分析), IFLYTEK'(100+类别的分类), CMNLI(自然语言推理)
