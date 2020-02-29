@@ -30,6 +30,13 @@
 
 （地址稍后更新）
 
+<a href='https://github.com/CLUEbenchmark/CLUE'>中文任务基准测评.分类与句子对任务</a>
+---------------------------------------------
+    AFQMC：语义相似度任务
+    TNEWS'：中文新闻（短文本）分类。包含15个类别的新闻，包括旅游，教育，金融，军事等。
+    IFLYTEK'：关于app应用描述的长文本数据，包含和日常生活相关的各类应用主题，共119个类别，如：打车、地图导航、免费WIFI、经营等
+    CMNLI：自然语言推理任务，判断给定的两个句子之间的关系，如蕴涵、中立、矛盾。
+
 <a href='https://www.cluebenchmarks.com/small_model_classification.html'>效果对比-小模型</a>
 ---------------------------------------------
 | 模型   | Score  | 参数    | AFQMC  | TNEWS'  | IFLYTEK'   | CMNLI   |  
