@@ -48,10 +48,12 @@ Pretrain Chinese model from CLUE 高质量中文预训练模型集合
 ---------------------------------------------
 | 模型   | 词汇表  | 词汇表大小    | 参数量  | 训练设备  | 训练速度   | 
 | :----:| :----: | :----: | :----: |:----: |:----: | 
-| <a href="#">BERT-base (baseline)</a>      | google_vocab  | 21128 | 102M  | TPU V3-8  | 1k Steps / 404s | 
-| <a href="#">BERT-base</a>      | clue_vocab  | 8021(&#8595;62.04%) | 92M(&#8595;9.80%)  | TPU V3-8  | 1k Steps / 350s(&#8593;15.43%) | 
-| <a href="#">RoBERTa-tiny-clue</a>      | clue_vocab  | 8021(&#8595;62.05%) | 7.5M(&#8595;92.6%)  | TPU V3-8  |1k Steps / 50s(&#8593;708.0%)  | 
+| <a href="#">BERT-base</a>      | google_vocab  | 21128 | 102M  | TPU V3-8  | 1k steps/404s | 
+| <a href="#">BERT-base</a>      | clue_vocab  | 8021(&#8595;62.04%) | 92M(&#8595;9.80%)  | TPU V3-8  | 1k steps/350s(&#8593;15.43%) | 
+| <a href="#">RoBERTa-tiny-clue</a>      | clue_vocab  | 8021(&#8595;62.05%) | 7.5M(&#8595;92.6%)  | TPU V3-8  |1k steps/50s(&#8593;708.0%)  | 
 
+模型结构
+---------------------------------------------
     为方便调用，所有模型都保持和Bert-base一致的结构，并可以直接使用Bert加载。
     RoBERTa-xxx-clue.zip
         |- bert_model.ckpt      # 模型权重
