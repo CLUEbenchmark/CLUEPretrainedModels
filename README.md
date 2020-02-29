@@ -23,9 +23,9 @@
 ---------------------------------------------
 | 模型简称 | 参数量|存储大小|语料 | 词汇表|直接下载 | 
 | :------- | :--------- | :--------- | :--------- | :---------: |  :---------: | 
-| **`RoBERTa-large-clue`** <br/> 大模型 | 290M |1.20G| **CLUECorpus2020** | **CLUEVocabulary** | **[TensorFlow](https://storage.googleapis.com/cluebenchmark/pretrained_models/RoBERTa-large-clue.zip)** |  
 | **`RoBERTa-tiny-clue`** <br/>超小模型 | 7.5M| 28.3M|**CLUECorpus2020** | **CLUEVocabulary** | **[TensorFlow](https://storage.googleapis.com/cluebenchmark/pretrained_models/RoBERTa-tiny-clue.zip)**  | 
 | **`RoBERTa-tiny-pair`** <br/>超小句子对模型|7.5M|28.3M| **CLUECorpus2020** | **CLUEVocabulary** | **[TensorFlow](https://storage.googleapis.com/cluebenchmark/pretrained_models/RoBERTa-tiny-pair.zip)** | 
+| **`RoBERTa-large-clue`** <br/> 大模型 | 290M |1.20G| **CLUECorpus2020** | **CLUEVocabulary** | **[TensorFlow](https://storage.googleapis.com/cluebenchmark/pretrained_models/RoBERTa-large-clue.zip)** |  
 | **`RoBERTa-large-pair`** <br/>大句子对模型|290M| 1.20G|**CLUECorpus2020** | **CLUEVocabulary** | **[TensorFlow](https://storage.googleapis.com/cluebenchmark/pretrained_models/RoBERTa-large-pair.zip)**  | 
 
 （地址稍后更新）
@@ -128,4 +128,4 @@ TODO LIST:
 
 Reference:
 ---------------------------------------------
-1. <a href='https://github.com/CLUEbenchmark/CLUE'>关于使用的任务的介绍</a> ：AFQMC(句子对), TNEWS'(情感分析), IFLYTEK'(100+类别的分类), CMNLI(自然语言推理)
+1. <a href='https://github.com/CLUEbenchmark/CLUE'>关于使用的任务的介绍：AFQMC(句子对), TNEWS'(情感分析), IFLYTEK'(100+类别的分类), CMNLI(自然语言推理)</a> 
