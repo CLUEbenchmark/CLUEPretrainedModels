@@ -21,10 +21,10 @@ Pretrain Chinese model from CLUE 高质量中文预训练模型集合
 ---------------------------------------------
 | 模型简称 | 语料 | 词汇表|直接下载 | 
 | :------- | :--------- | :---------: |  :---------: | 
-| **`RoBERTa-large-clue`** | **CLUECorpus2020** | **CLUEVocabulary** | **[TensorFlow](http://www.CLUEbenchmark.com)**  |  
-| **`RoBERTa-tiny-clue`** | **CLUECorpus2020** | **CLUEVocabulary** | **[TensorFlow]()**  | 
-| **`RoBERTa-tiny-pair`** | **CLUECorpus2020** | **CLUEVocabulary** | **[TensorFlow]()** | 
-| **`RoBERTa-large-pair`** | **CLUECorpus2020** | **CLUEVocabulary** | **[TensorFlow]()** | 
+| **`RoBERTa-large-clue`** | **CLUECorpus2020** | **CLUEVocabulary** |  |  
+| **`RoBERTa-tiny-clue`** | **CLUECorpus2020** | **CLUEVocabulary** | **[TensorFlow](https://storage.googleapis.com/cluebenchmark/pretrained_models/RoBERTa-tiny-clue.zip)**  | 
+| **`RoBERTa-tiny-pair`** | **CLUECorpus2020** | **CLUEVocabulary** | ** ** | 
+| **`RoBERTa-large-pair`** | **CLUECorpus2020** | **CLUEVocabulary** | ** ** | 
 
 （地址稍后更新）
 
@@ -32,26 +32,34 @@ Pretrain Chinese model from CLUE 高质量中文预训练模型集合
 ---------------------------------------------
 | 模型   | Score  | 参数    | AFQMC  | TNEWS'  | IFLYTEK'   | CMNLI   |  
 | :----:| :----: | :----: | :----: |:----: |:----: |:----: | 
-| <a href="">BERT-base (baseline)</a>      | 67.57% | 108M |  73.70% | 56.58%  | 60.29% | 79.69% | 
-| <a href="">ALBERT-tiny</a>      | 60.65% | 4M  | 69.92% | 53.35%  | 48.71% | 70.61% |  
-| <a href="">RoBERTa-tiny-clue</a>      | 63.60% | 7.5M  | 69.52% | 54.57%  | 57.31% | 73.10% |  
+| <a href="#">BERT-base (baseline)</a>      | 67.57% | 108M |  73.70% | 56.58%  | 60.29% | 79.69% | 
+| <a href="#">ALBERT-tiny</a>      | 60.65% | 4M  | 69.92% | 53.35%  | 48.71% | 70.61% |  
+| <a href="#">RoBERTa-tiny-clue</a>      | 63.60% | 7.5M  | 69.52% | 54.57%  | 57.31% | 73.10% |  
 
 <a href='https://www.cluebenchmarks.com/classification.html'>效果对比-大模型</a>
 ---------------------------------------------
 | 模型   | Score  | 参数    | AFQMC  | TNEWS'  | IFLYTEK'   | CMNLI   |  
 | :----:| :----: | :----: | :----: |:----: |:----: |:----: | 
-| <a href="">BERT-base  (baseline)</a>      | 67.57% | 108M |  73.70% | 56.58%  | 60.29% | 79.69% | 
-| <a href="">RoBERTa-wwm-large</a>      | 69.46% | 325M | **74.44%** | **58.41%**  | 62.77% | 82.20% | 
-| <a href="">RoBERTa-large-clue</a>      | **69.68%** | **290M**  | 74.41% | 58.38%  | **63.58%** | **82.36%** |  
+| <a href="#">BERT-base  (baseline)</a>      | 67.57% | 108M |  73.70% | 56.58%  | 60.29% | 79.69% | 
+| <a href="#">RoBERTa-wwm-large</a>      | 69.46% | 325M | **74.44%** | **58.41%**  | 62.77% | 82.20% | 
+| <a href="#">RoBERTa-large-clue</a>      | **69.68%** | **290M**  | 74.41% | 58.38%  | **63.58%** | **82.36%** |  
 
 速度对比
 ---------------------------------------------
 | 模型   | 词汇表  | 词汇表大小    | 参数量  | 训练设备  | 训练速度   | 
 | :----:| :----: | :----: | :----: |:----: |:----: | 
-| <a href="">BERT-base (baseline)</a>      | google_vocab  | 21128 | 102M  | TPU V3-8  | 1k Steps / 404s | 
-| <a href="">BERT-base</a>      | clue_vocab  | 8021(&#8595;62.04%) | 92M(&#8595;9.80%)  | TPU V3-8  | 1k Steps / 350s(&#8593;15.43%) | 
-| <a href="">RoBERTa-tiny-clue</a>      | clue_vocab  | 8021(&#8595;62.05%) | 7.5M(&#8595;92.6%)  | TPU V3-8  |1k Steps / 50s(&#8593;708.0%)  | 
+| <a href="#">BERT-base (baseline)</a>      | google_vocab  | 21128 | 102M  | TPU V3-8  | 1k Steps / 404s | 
+| <a href="#">BERT-base</a>      | clue_vocab  | 8021(&#8595;62.04%) | 92M(&#8595;9.80%)  | TPU V3-8  | 1k Steps / 350s(&#8593;15.43%) | 
+| <a href="#">RoBERTa-tiny-clue</a>      | clue_vocab  | 8021(&#8595;62.05%) | 7.5M(&#8595;92.6%)  | TPU V3-8  |1k Steps / 50s(&#8593;708.0%)  | 
 
+    为方便调用，所有模型都保持和Bert-base一致的结构，并可以直接使用Bert加载。
+    RoBERTa-xxx-clue.zip
+        |- bert_model.ckpt      # 模型权重
+        |- bert_model.meta      # 模型meta信息
+        |- bert_model.index     # 模型index信息
+        |- bert_config.json     # 模型参数
+        |- vocab.txt            # 词表
+    
 一键运行.基线模型与代码 Baseline with codes
 ---------------------------------------------------------------------
     使用方式：
