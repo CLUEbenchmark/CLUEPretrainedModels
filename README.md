@@ -19,12 +19,12 @@ Pretrain Chinese model from CLUE 高质量中文预训练模型集合
 
 模型下载 
 ---------------------------------------------
-| 模型简称 | 语料 | 直接下载 | 百度云下载 |
-| :------- | :--------- | :---------: | :---------: |
-| **`RoBERTa-large-clue`** | **CLUECorpus2020** | **[TensorFlow](http://www.CLUEbenchmark.com)**<br/>**[PyTorch]()** | **[TensorFlow]()**<br/>**[PyTorch]()** |
-| **`RoBERTa-tiny-clue`** | **CLUECorpus2020** | **[TensorFlow]()**<br/>**[PyTorch]()** | **[TensorFlow]()**<br/>**[PyTorch]()** |
-| **`RoBERTa-tiny-pair`** | **CLUECorpus2020** | **[TensorFlow]()**<br/>**[PyTorch]()** | **[TensorFlow]()**<br/>**[PyTorch]()** |
-| **`RoBERTa-large-pair`** | **CLUECorpus2020** | **[TensorFlow]()**<br/>**[PyTorch]()** | **[TensorFlow]()**<br/>**[PyTorch]()** |
+| 模型简称 | 语料 | 词汇表|直接下载 | 
+| :------- | :--------- | :---------: |  :---------: | 
+| **`RoBERTa-large-clue`** | **CLUECorpus2020** | **CLUEVocabulary** | **[TensorFlow](http://www.CLUEbenchmark.com)**  |  
+| **`RoBERTa-tiny-clue`** | **CLUECorpus2020** | **CLUEVocabulary** | **[TensorFlow]()**  | 
+| **`RoBERTa-tiny-pair`** | **CLUECorpus2020** | **CLUEVocabulary** | **[TensorFlow]()** | 
+| **`RoBERTa-large-pair`** | **CLUECorpus2020** | **CLUEVocabulary** | **[TensorFlow]()** | 
 
 （地址稍后更新）
 
@@ -49,8 +49,8 @@ Pretrain Chinese model from CLUE 高质量中文预训练模型集合
 | 模型   | 词汇表  | 词汇表大小    | 参数量  | 训练设备  | 训练速度   | 
 | :----:| :----: | :----: | :----: |:----: |:----: | 
 | <a href="">BERT-base (baseline)</a>      | google_vocab  | 21128 | 102M  | TPU V3-8  | 1000 Steps / 404s | 
-| <a href="">BERT-base</a>      | clue_vocab  | 8021 | 92M  | TPU V3-8  | 1000 Steps / 350s  | 
-| <a href="">RoBERTa-tiny-clue</a>      | clue_vocab  | 8021 | 75M  | TPU V3-8  |1000 Steps / 50s   | 
+| <a href="">BERT-base</a>      | clue_vocab  | 8021(&#8595;62.04%) | 92M(&#8595;9.80%)  | TPU V3-8  | 1000 Steps / 350s(&#8593;15.43%) | 
+| <a href="">RoBERTa-tiny-clue</a>      | clue_vocab  | 8021(&#8595;62.05%) | 7.5M(&#8595;92.6%)  | TPU V3-8  |1000 Steps / 50s(&#8593;708.0%)  | 
 
 一键运行.基线模型与代码 Baseline with codes
 ---------------------------------------------------------------------
