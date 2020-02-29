@@ -23,7 +23,7 @@ Pretrain Chinese model from CLUE 高质量中文预训练模型集合
 | :------- | :--------- | :---------: |  :---------: | 
 | **`RoBERTa-large-clue`** | **CLUECorpus2020** | **CLUEVocabulary** |  |  
 | **`RoBERTa-tiny-clue`** | **CLUECorpus2020** | **CLUEVocabulary** | **[TensorFlow](https://storage.googleapis.com/cluebenchmark/pretrained_models/RoBERTa-tiny-clue.zip)**  | 
-| **`RoBERTa-tiny-pair`** <br/>相似度或句子对任务| **CLUECorpus2020** | **CLUEVocabulary** | **[TensorFlow](https://storage.googleapis.com/cluebenchmark/pretrained_models/RoBERTa-tiny-pair.zip)** | 
+| **`RoBERTa-tiny-pair`** <br/>句子对任务专门模型| **CLUECorpus2020** | **CLUEVocabulary** | **[TensorFlow](https://storage.googleapis.com/cluebenchmark/pretrained_models/RoBERTa-tiny-pair.zip)** | 
 | **`RoBERTa-large-pair`** | **CLUECorpus2020** | **CLUEVocabulary** | ** ** | 
 
 （地址稍后更新）
@@ -44,6 +44,15 @@ Pretrain Chinese model from CLUE 高质量中文预训练模型集合
 | <a href="#">RoBERTa-wwm-large</a>      | 69.46% | 325M | **74.44%** | **58.41%**  | 62.77% | 82.20% | 
 | <a href="#">RoBERTa-large-clue</a>      | **69.68%** | **290M**  | 74.41% | 58.38%  | **63.58%** | **82.36%** |  
 
+<a href='https://www.cluebenchmarks.com/small_model_classification.html'>效果对比-句子对pair模型</a>
+---------------------------------------------
+| 模型   | Score  | 参数    | AFQMC  | 
+| :----:| :----: | :----: | :----:  |
+| <a href="#">RoBERTa-tiny-clue</a>      | 69.52% | 7.5M| 69.52%|
+| <a href="#">RoBERTa-tiny-pair</a>      | 69.93%(&#8593;0.41) |7.5M | 69.93 % |
+| <a href="#">RoBERTa-large-clue</a>      | 74.00% | 92M| 74.00%|
+| <a href="#">RoBERTa-large-pair</a>      | 74.41%(&#8593;0.41) |92M | 74.41% |
+ 
 速度对比
 ---------------------------------------------
 | 模型   | 词汇表  | 词汇表大小    | 参数量  | 训练设备  | 训练速度   | 
