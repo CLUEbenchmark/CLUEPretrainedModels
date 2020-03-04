@@ -23,10 +23,10 @@
 ---------------------------------------------
 | 模型简称 | 参数量|存储大小|语料 | 词汇表|直接下载 | 
 | :------- | :--------- | :--------- | :--------- | :---------: |  :---------: | 
-| **`RoBERTa-tiny-clue`** <br/>超小模型 | 7.5M| 28.3M|**CLUECorpus2020** | **CLUEVocabulary** | **[TensorFlow](https://storage.googleapis.com/cluebenchmark/pretrained_models/RoBERTa-tiny-clue.zip) <br/> [Pytorch (提取码:8qvb)](https://pan.baidu.com/s/1hoR01GbhcmnDhZxVodeO4w)**  | 
-| **`RoBERTa-tiny-pair`** <br/>超小句子对模型|7.5M|28.3M| **CLUECorpus2020** | **CLUEVocabulary** | **[TensorFlow](https://storage.googleapis.com/cluebenchmark/pretrained_models/RoBERTa-tiny-pair.zip) <br/> [Pytorch (提取码:8qvb)](https://pan.baidu.com/s/1hoR01GbhcmnDhZxVodeO4w)** | 
-| **`RoBERTa-large-clue`** <br/> 大模型 | 290M |1.20G| **CLUECorpus2020** | **CLUEVocabulary** | **[TensorFlow](https://storage.googleapis.com/cluebenchmark/pretrained_models/RoBERTa-large-clue.zip)** |  
-| **`RoBERTa-large-pair`** <br/>大句子对模型|290M| 1.20G|**CLUECorpus2020** | **CLUEVocabulary** | **[TensorFlow](https://storage.googleapis.com/cluebenchmark/pretrained_models/RoBERTa-large-pair.zip)**  | 
+| **`RoBERTa-tiny-clue`** <br/>超小模型 | 7.5M| 28.3M|**CLUECorpus2020** | **CLUEVocabulary** | **[TensorFlow](https://storage.googleapis.com/cluebenchmark/pretrained_models/RoBERTa-tiny-clue.zip) <br/> [PyTorch (提取码:8qvb)](https://pan.baidu.com/s/1hoR01GbhcmnDhZxVodeO4w)**  | 
+| **`RoBERTa-tiny-pair`** <br/>超小句子对模型|7.5M|28.3M| **CLUECorpus2020** | **CLUEVocabulary** | **[TensorFlow](https://storage.googleapis.com/cluebenchmark/pretrained_models/RoBERTa-tiny-pair.zip) <br/> [PyTorch (提取码:8qvb)](https://pan.baidu.com/s/1hoR01GbhcmnDhZxVodeO4w)** | 
+| **`RoBERTa-large-clue`** <br/> 大模型 | 290M |1.20G| **CLUECorpus2020** | **CLUEVocabulary** | **[TensorFlow](https://storage.googleapis.com/cluebenchmark/pretrained_models/RoBERTa-large-clue.zip) <br/> [PyTorch (提取码:8qvb)](https://pan.baidu.com/s/1hoR01GbhcmnDhZxVodeO4w)** |  
+| **`RoBERTa-large-pair`** <br/>大句子对模型|290M| 1.20G|**CLUECorpus2020** | **CLUEVocabulary** | **[TensorFlow](https://storage.googleapis.com/cluebenchmark/pretrained_models/RoBERTa-large-pair.zip) <br/> [PyTorch (提取码:8qvb)](https://pan.baidu.com/s/1hoR01GbhcmnDhZxVodeO4w)**  | 
 
 （地址稍后更新）
 
