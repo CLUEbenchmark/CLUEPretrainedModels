@@ -1,5 +1,4 @@
 # CLUE Pretrained Models
-
 高质量中文预训练模型集合：
 
 最先进的大模型、速度最快和效果好的小模型、面向相似性或句子对任务优化的专门模型。
@@ -8,6 +7,8 @@
 
 ![./pics/corpus.png](./pics/corpus.png)
 
+We introduce the Chinese corpus from CLUE organization, CLUECorpus2020, a large-scale corpus that can be used directly for self-supervised learning such as pretraining of a language model, or language generation. It has 100G raw corpus with 35 billion Chinese characters, which is retrieved from Common Crawl. To better understand this corpus, we conduct language understanding experiments on both small and large scale, and results show that the models trained on this corpus can achieve excellent performance on Chinese. We release a new Chinese vocabulary(vocab clue) with a size of 8K, which is only one-third of the vocabulary size used in Chinese Bert released by Google. It saves computational cost and memory while works as good as original vocabulary. We also release both large and tiny versions of the pre-trained model on this corpus. The former achieves
+the state-of-the-art result, and the latter retains most precision while accelerating training and prediction speed for eight times compared to Bert-base. 
 
 介绍
 ---------------------------------------------
