@@ -37,7 +37,25 @@ the state-of-the-art result, and the latter retains most precision while acceler
 | **`RoBERTa-large-clue`** <br/> 大模型 | 290M |1.20G| **CLUECorpus2020** | **CLUEVocab** | **[TensorFlow](https://storage.googleapis.com/cluebenchmark/pretrained_models/RoBERTa-large-clue.zip) <br/> [PyTorch (提取码:8qvb)](https://pan.baidu.com/s/1hoR01GbhcmnDhZxVodeO4w)** |  
 | **`RoBERTa-large-pair`** <br/>大句子对模型|290M| 1.20G|**CLUECorpus2020** | **CLUEVocab** | **[TensorFlow](https://storage.googleapis.com/cluebenchmark/pretrained_models/RoBERTa-large-pair.zip) <br/> [PyTorch (提取码:8qvb)](https://pan.baidu.com/s/1hoR01GbhcmnDhZxVodeO4w)**  | 
 
-（地址稍后更新）
+### 快速加载
+
+依托于[Huggingface-Transformers 2.5.1](https://github.com/huggingface/transformers)，可轻松调用以上模型。
+
+```
+tokenizer = BertTokenizer.from_pretrained("MODEL_NAME")
+model = BertModel.from_pretrained("MODEL_NAME")
+```
+
+其中`MODEL_NAME`对应列表如下：
+
+| 模型名                     | MODEL_NAME                                                   |
+| -------------------------- | ------------------------------------------------------------ |
+| **RoBERTa-tiny-clue**      | [`clue/roberta_chinese_clue_tiny`](https://huggingface.co/clue/roberta_chinese_clue_tiny) |
+| **RoBERTa-tiny-pair**      | [`clue/roberta_chinese_pair_tiny`](https://huggingface.co/clue/roberta_chinese_pair_tiny) |
+| **RoBERTa-tiny3L768-clue** | [`clue/roberta_chinese_3L768_clue_tiny`](https://huggingface.co/clue/roberta_chinese_3L768_clue_tiny) |
+| **RoBERTa-tiny3L312-clue** | [`clue/roberta_chinese_3L312_clue_tiny`](https://huggingface.co/clue/roberta_chinese_3L312_clue_tiny) |
+| **RoBERTa-large-clue**     | [`clue/roberta_chinese_clue_large`](https://huggingface.co/clue/roberta_chinese_clue_large) |
+| **RoBERTa-large-pair**     | [`clue/roberta_chinese_pair_large`](https://huggingface.co/clue/roberta_chinese_pair_large) |
 
 <a href='https://github.com/CLUEbenchmark/CLUE'>中文任务基准测评.分类与句子对任务</a>
 ---------------------------------------------
