@@ -110,7 +110,7 @@ the state-of-the-art result, and the latter retains most precision while acceler
            ### cd CLUEPretrainedModels/baselines/models_pytorch/classifier_pytorch
     3、运行一键运行脚本(GPU方式): 会自动下载模型和所有任务数据并开始运行。
        bash run_classifier_clue.sh
-       执行该一键运行脚本将会执行下载并执行为所有任务找到最优模型，然后测试得到提交结果
+       执行该一键运行脚本将会自动下载所有任务数据，并为所有任务找到最优模型，然后测试得到提交结果
     4、tpu使用方式(可选)  
         cd CLUEPretrainedModels/baselines/models/bert/tpu  
         sh run_classifier_tnews.sh即可测试tnews任务（注意更换里面的gs路径和tpu ip）。数据和模型会自动下载和上传。
