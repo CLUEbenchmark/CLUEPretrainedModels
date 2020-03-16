@@ -139,7 +139,13 @@ model = BertModel.from_pretrained("MODEL_NAME")
 
 预训练
 ---------------------------------------------
-add something here...
+小文件预训练示例
+需要下载一个模型文件，并将模型文件的地址修改到以下的bash文件中。最后训练结果会保存在当前目录下的test文件夹中.
+```
+bash create_sample_zh.sh
+bash run_sample.sh
+```
+结果在MLM上应该是1.0的 acc。(NSP任务没有训练)
 
 问题反馈和支持
 ---------------------------------------------
