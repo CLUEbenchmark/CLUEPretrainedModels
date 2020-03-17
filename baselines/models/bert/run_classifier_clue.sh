@@ -1,7 +1,7 @@
 # @Author: bo.shi
 # @Date:   2020-03-15 16:11:00
 # @Last Modified by:   bo.shi
-# @Last Modified time: 2020-03-15 17:27:23
+# @Last Modified time: 2020-03-17 13:06:02
 #!/usr/bin/env bash
 CURRENT_DIR=$(cd -P -- "$(dirname -- "$0")" && pwd -P)
 CLUE_DATA_DIR=$CURRENT_DIR/../../CLUEdataset
@@ -76,7 +76,9 @@ run_task() {
   TASK_NAME=$1
   MODEL_NAME=$2
   download_data $TASK_NAME
-  # download_model $MODEL_NAME
+  if [ ! -d $CLUE_PREV_TRAINED_MODEL_DIR/$MODEL_NAME ]; then
+    download_model $MODEL_NAME
+  fi
   DATA_DIR=$CLUE_DATA_DIR/${TASK_NAME}
   PREV_TRAINED_MODEL_DIR=$CLUE_PREV_TRAINED_MODEL_DIR/$MODEL_NAME
   MAX_SEQ_LENGTH=$3
@@ -100,20 +102,20 @@ run_task() {
         --output_dir=$OUTPUT_DIR \
         --keep_checkpoint_max=0 \
   "
-  cd $CURRENT_DIR
-  echo "Start running..."
-  python run_classifier.py \
-        $COMMON_ARGS \
-        --do_train=true \
-        --do_eval=false \
-        --do_predict=false
+  # cd $CURRENT_DIR
+  # echo "Start running..."
+  # python run_classifier.py \
+  #       $COMMON_ARGS \
+  #       --do_train=true \
+  #       --do_eval=false \
+  #       --do_predict=false
 
-  echo "Start predict..."
-  python run_classifier.py \
-        $COMMON_ARGS \
-        --do_train=false \
-        --do_eval=true \
-        --do_predict=true
+  # echo "Start predict..."
+  # python run_classifier.py \
+  #       $COMMON_ARGS \
+  #       --do_train=false \
+  #       --do_eval=true \
+  #       --do_predict=true
 }
 
 download_model RoBERTa-tiny-clue
