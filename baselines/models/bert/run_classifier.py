@@ -2,7 +2,7 @@
 # @Author: bo.shi
 # @Date:   2020-03-14 09:20:22
 # @Last Modified by:   bo.shi
-# @Last Modified time: 2020-03-15 22:32:15
+# @Last Modified time: 2020-03-17 11:27:16
 # coding=utf-8
 # Copyright 2018 The Google AI Language Team Authors.
 #
@@ -26,6 +26,7 @@ from __future__ import print_function
 import collections
 import csv
 import os
+os.environ["CUDA_VISIBLE_DEVICES"] = '1'
 import modeling
 import optimization
 import tokenization
