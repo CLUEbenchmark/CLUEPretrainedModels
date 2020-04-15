@@ -102,20 +102,20 @@ run_task() {
         --output_dir=$OUTPUT_DIR \
         --keep_checkpoint_max=0 \
   "
-  # cd $CURRENT_DIR
-  # echo "Start running..."
-  # python run_classifier.py \
-  #       $COMMON_ARGS \
-  #       --do_train=true \
-  #       --do_eval=false \
-  #       --do_predict=false
+  cd $CURRENT_DIR
+  echo "Start running..."
+  python run_classifier.py \
+        $COMMON_ARGS \
+        --do_train=true \
+        --do_eval=false \
+        --do_predict=false
 
-  # echo "Start predict..."
-  # python run_classifier.py \
-  #       $COMMON_ARGS \
-  #       --do_train=false \
-  #       --do_eval=true \
-  #       --do_predict=true
+  echo "Start predict..."
+  python run_classifier.py \
+        $COMMON_ARGS \
+        --do_train=false \
+        --do_eval=true \
+        --do_predict=true
 }
 
 download_model RoBERTa-tiny-clue
